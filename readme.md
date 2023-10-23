@@ -1,6 +1,6 @@
-# Way to middle
+# TheBox Landing
 
-This is a learning project in which a todo application will be developed.
+This is a learning project in which a landing page will be developed.
 
 ### You can find these section useful:
 
