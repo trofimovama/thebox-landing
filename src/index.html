@@ -5,8 +5,343 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TheBox Landing</title>
+    <link rel="stylesheet" href="./index.scss">
   </head>
   <body>
-    <div></div>
+    <!-- ------------------ HEADER --------------------- -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__img" href="#">
+            <img src="./assets/images/logo.png" alt="logo icon">
+            <span class="logo__text"><i>The</i>Box</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <a class="nav__item" href="#">Home</a>
+          <a class="nav__item" href="#">About Us</a>
+          <a class="nav__item" href="#">Projects</a>
+          <a class="nav__item" href="#">Services</a>
+          <a class="nav__item" href="#">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrapper">
+<!-- ------------------ INTRO --------------------- -->
+      <section class="intro">
+        <div class="container">
+          <h1 class="intro__title">Building things is our mission.</h1>
+          <div class="slider-controls">
+            <span class="slider-controls__title">Feature Projects</span>
+            <span class="slider-controls__content">The National University of Architecture</span>
+            <div class="slider-controls__btns">
+              <button class="btn btn--prev btn--dark">Back
+                <svg class="btn__icon btn__icon--lg" fill="#fff">
+                  <use xlink:href="#arrow-back"/>
+                </svg>
+              </button>
+              <button class="btn btn--next btn--dark">Next
+                <svg class="btn__icon btn__icon--sm" fill="#fff">
+                  <use xlink:href="#arrow-next"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- ------------------ REPUTATION --------------------- -->
+      <section class="reputation">
+        <div class="container">
+          <h2 class="reputation__title">Our Reputation</h2>
+          <ul class="reputation__cards">
+
+            <li class="reputaion-card">
+              <svg class="reputation-card__icon" fill="#F9995D">
+                <use xlink:href="#service"/>
+              </svg>
+              <span class="reputaion-card__title">Best Services</span>
+              <p class="reputaion-card__content">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+            </li>
+
+            <li class="reputaion-card">
+              <svg class="reputation-card__icon" fill="#F9995D">
+                <use xlink:href="#service"/>
+              </svg>
+              <span class="reputaion-card__title">Best Teams</span>
+              <p class="reputaion-card__content">Cursus semper tellus volutpat aliquet lacus. </p>
+            </li>
+
+            <li class="reputaion-card">
+              <svg class="reputation-card__icon" fill="#F9995D">
+                <use xlink:href="#instruments"/>
+              </svg>
+              <span class="reputaion-card__title">Best Designs</span>
+              <p class="reputaion-card__content">Ultricies at ipsum nunc, tristique nam lectus.</p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+<!-- ------------------ ABOUT --------------------- -->
+      <section class="about">
+        <div class="container">
+          <div class="about__img">
+            <img src="./assets/images/person-photo.png" alt="photo image">
+          </div>
+          <div class="info-card">
+            <span class="info-card__title">About us</span>
+            <p class="info-card__content">For more than 30 years we have been delivering world-class construction and we&#39;ve built many lasting relationships along the way. We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+            <button href="#" class="btn btn--lg btn--white">More on Our History</button>
+          </div>
+        </div>
+      </section>
+<!-- ------------------ SERVICES --------------------- -->
+      <section class="services">
+        <div class="container">
+          <span class="services__title">Our Services</span>
+          <ul class="services__container">
+
+            <li class="service-card">
+              <svg class="service-card__icon">
+                <use xlink:href="#construction"/>
+              </svg>
+              <span class="service-card__title">Construction</span>
+            </li>
+
+            <li class="service-card service-card--blue">
+              <svg class="service-card__icon">
+                <use xlink:href="#renovation"/>
+              </svg>
+              <span class="service-card__title">Renovation</span>
+            </li>
+
+            <li class="service-card">
+              <svg class="service-card__icon">
+                <use xlink:href="#consultation"/>
+              </svg>
+              <span class="service-card__title">Consultation</span>
+            </li>
+
+            <li class="service-card service-card--blue">
+              <svg class="service-card__icon">
+                <use xlink:href="#repair"/>
+              </svg>
+              <span class="service-card__title">Repair Services</span>
+            </li>
+
+            <li class="service-card">
+              <svg class="service-card__icon">
+                <use xlink:href="#architecture"></use>
+              </svg>
+              <span class="service-card__title">Architecture</span>
+            </li>
+
+            <li class="service-card service-card--blue">
+              <svg class="service-card__icon">
+                <use xlink:href="#electric"/>
+              </svg>
+              <div class="service-card__separator"></div>
+              <span class="service-card__title">Electric</span>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+<!-- ------------------ EXPERIENCE --------------------- -->
+      <section class="experience">
+        <div class="container">
+          <ul class="experience__cards">
+
+            <li class="experience-card experience-card--right">
+              <div class="experience-card__icon">
+                <img src="./assets/images/clients.png" alt="clients icon">
+              </div>
+              <span class="experience-card__digit">84</span>
+              <span class="experience-card__description">Happy Clients</span>
+            </li>
+
+            <li class="experience-card experience-card--left">
+              <div class="experience-card__icon">
+                <img src="./assets/images/projects.png" alt="projects icon">
+              </div>
+              <span class="experience-card__digit">123</span>
+              <span class="experience-card__description">Projects Completed</span>
+            </li>
+
+            <li class="experience-card experience-card--right">
+              <div class="experience-card__icon">
+                <img src="./assets/images/awards.png" alt="awards icon">
+              </div>
+              <span class="experience-card__digit">37</span>
+              <span class="experience-card__description">Awards Win</span>
+            </li>
+
+            <li class="experience-card experience-card--right experience-card--bottom">
+              <div class="experience-card__icon">
+                <img src="./assets/images/business.png" alt="business icon">
+              </div>
+              <span class="experience-card__digit">30</span>
+              <span class="experience-card__description">Years in Business</span>
+            </li>
+
+          </div>
+          <div class="experience__description">
+            <span class="experience__description-title">30 Years Experience</span>
+            <p class="experience__description-content">Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
+            <button href="#" class="btn btn--blue btn--sm">Contact Us</button>
+          </div>
+        </div>
+      </section>
+<!-- ------------------ CONSULTATION --------------------- -->
+      <section class="consultation">
+        <div class="container">
+          <div class="consultation__info">
+            <span class="consultation__info-descr">Free consultation with exceptional quality</span>
+            <span class="consultation__info-tel">Just one call away: <a href="tel:+84 1102 2703">+84 1102 2703</a></span>
+          </div>
+          <button href="#" class="btn btn--outline">Get your consultation</button>
+        </div>
+      </section>
+<!-- ------------------ PROJECTS --------------------- -->
+      <section class="projects">
+        <div class="container">
+          <h2 class="projects__title">Projects</h2>
+          <div class="tabs">
+            <div class="tabs__controls">
+              <a href="#" class="tabs__controls-item">All</a>
+              <a href="#" class="tabs__controls-item">Commercial</a>
+              <a href="#" class="tabs__controls-item">Residencial</a>
+              <a href="#" class="tabs__controls-item">Other</a>
+            </div>
+            <div class="tabs__body">
+              <ul class="tabs__body-cards">
+
+                <li class="project-card">
+                  <img src="./assets/images/wildstone-infra.png" alt="Wildstone Infra Hotel picture" class="projects-card__img">
+                  <div class="projects-card__descr">
+                    <span class="projects-card__descr-title">Wildstone Infra Hotel</span>
+                    <span class="projects-card__descr-address">2715 Ash Dr. San Jose, South Dakota</span>
+                  </div>
+                </li>
+
+                <li class="project-card">
+                  <img src="./assets/images/wish-stone.png" alt="Wish Stone Building picture" class="projects-card__img">
+                  <div class="projects-card__descr">
+                    <span class="projects-card__descr-title">Wish Stone Building</span>
+                    <span class="projects-card__descr-address">2972 Westheimer Rd. Santa Ana, Illinois</span>
+                  </div>
+                </li>
+
+                <li class="project-card">
+                  <img src="./assets/images/parkinston.png" alt="Mr. Parkinston's House picture" class="projects-card__img">
+                  <div class="projects-card__descr">
+                    <span class="projects-card__descr-title">Mr. Parkinston&#39;s House</span>
+                    <span class="projects-card__descr-address">3517 W. Gray St. Utica, Pennsylvania</span>
+                  </div>
+                </li>
+
+                <li class="project-card">
+                  <img src="./assets/images/oregano-height.png" alt="Oregano Height picture" class="projects-card__img">
+                  <div class="projects-card__descr">
+                    <span class="projects-card__descr-title">Oregano Height</span>
+                    <span class="projects-card__descr-address">2464 Royal Ln. Mesa, New Jersey</span>
+                  </div>
+                </li>
+
+              </ul>
+              <div class="tabs__navigation">
+                <button class="btn btn--lg btn--next btn--dark">Next
+                  <svg class="btn__icon btn__icon--lg" fill="#fff">
+                    <use xlink:href="#arrow-next"/>
+                  </svg>
+                </button>
+                <div class="dots">
+                  <div class="dots__item"></div>
+                  <div class="dots__item dotes__item--active"></div>
+                  <div class="dots__item"></div>
+                  <div class="dots__item"></div>
+                  <div class="dots__item"></div>
+                </div>
+                <button class="btn btn-lg btn-prev btn--dark">Back
+                  <svg class="btn__icon btn__icon--lg" fill="#fff">
+                    <use xlink:href="#arrow-back"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- ------------------ FEEDBACK --------------------- -->
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__title">What can us do for you?</h2>
+          <p class="feedback__description">We are ready to work on a project of any complexity, whether it&#39;s commercial or residential.</p>
+          <form action="#" method="post" class="feedback__form">
+            <div class="feedback__form-fields">
+              <input type="text" placeholder="Your name" class="field" required />
+              <input type="email" placeholder="Email" class="field" required />
+              <input type="text" placeholder="Reason for Contacting" class="field" required />
+              <input type="tel" placeholder="Phone" class="field" />
+            </div>
+            <textarea cols="30" rows="10" placeholder="Message" class="textarea"></textarea>
+            <span class="feedback__form-note">* indicates a required field</span>
+            <button type="submit" class="btn btn--blue btn--sm" href="#">Submit</button>
+          </form>
+        </div>
+      </section>
+<!-- ------------------ CONTACTS --------------------- -->
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__info">
+            <span class="contacts__info-item"><span class="contacts__info-name">ADDRESS:</span>6391 Elgin St. Celina, Delaware 10299</span>
+            <span class="contacts__info-item"><span class="contacts__info-name">PHONE:</span>6391 Elgin St. Celina, Delaware 10299</span>
+            <span class="contacts__info-item"><span class="contacts__info-name">EMAIL:</span><a href="mailto:hello@thebox.com">hello@thebox.com</a></span>
+            <div class="logo">
+              <a class="logo__img" href="#">
+                <img src="./assets/images/logo.png" alt="logo icon">
+                <span class="logo__name"><i>The</i>Box</span>
+              </a>
+            </div>
+          </div>
+          <div class="contacts__feedback">
+
+            <div class="contacts__feedback-email">
+              <span class="contacts__feedback-title">NEWSLETTER:</span>
+              <input type="email" class="field">
+              <button type="submit" class="btn btn-sm btn-orange">Subscribe</button>
+            </div>
+
+            <div class="contacts__feedback-social">
+              <span class="contacts__feedback-title">SOCIAL:</span>
+              <div class="social-icons">
+                <a href="#" class="social-icons__item">
+                  <svg fill="#3D445C">
+                    <use xlink:href="#facebook-logo"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-icons__item">
+                  <svg fill="#3D445C">
+                    <use xlink:href="#linkedin-logo"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-icons__item">
+                  <svg fill="#3D445C">
+                    <use xlink:href="#twitter-logo"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ------------------ FOOTER --------------------- -->
+    <footer class="footer">
+      <div class="container">
+        <span class="footer__content">TheBox Company © 2022. All Rights Reserved</span>
+      </div>
+    </footer>
   </body>
 </html>
