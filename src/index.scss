@@ -1,12 +1,124 @@
-@use "./styles/globals/normalize.css";
-@use "./styles/globals/fonts.scss";
+@import "./styles/globals/normalize.css";
+@import "./styles/globals/fonts.scss";
+@import "./styles/globals/variables.scss";
 
-body {
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  line-height: 16.94px;
+@import "./styles/components/header.scss";
+@import "./styles/components/intro.scss";
+@import "./styles/components/reputation.scss";
+@import "./styles/components/about.scss";
+@import "./styles/components/services.scss";
+@import "./styles/components/experience.scss";
+@import "./styles/components/consultation.scss";
+@import "./styles/components/projects.scss";
+@import "./styles/components/feedback.scss";
+@import "./styles/components/contacts.scss";
+@import "./styles/components/footer.scss";
+
+html {
+  box-sizing: border-box;
 }
 
-.svg {
- background-color: black;
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: $color-background-primary;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, p {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  margin: 0 100px;
+
+  @media (max-width: 1000px) {
+    & {
+      margin: 0 50px;
+    }
+  }
+}
+
+.btn {
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-medium-dark;
+  }
+
+  &--white-text {
+    color: $color-white;
+  }
+
+  &--blue-text {
+    color: $color-blue;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &--dark {
+    background-color: $color-dark;
+  }
+
+  &--blue {
+    background-color: $color-blue;
+  }
+
+  &--orange {
+    background-color: $color-orange;
+
+    &:hover {
+      background-color: orange;
+    }
+  }
+
+  &--navigation {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid $color-white;
+
+    &:hover {
+      border: none;
+      background-color: $color-blue;
+    }
+  }
+
+  &--lg {
+    padding: 16px 20px;
+  }
+
+  &--sm {
+    padding: 10px 20px;
+  }
+}
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: $color-dark;
 }

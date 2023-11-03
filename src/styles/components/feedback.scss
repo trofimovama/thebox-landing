@@ -1,0 +1,96 @@
+.feedback {
+  margin-bottom: 50px;
+  background-color: $color-background-secondary;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: $color-medium;
+    text-align: center;
+    padding-bottom: 38px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  &__form-fields {
+    display: grid;
+    min-width: 590px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding-bottom: 20px;
+  }
+
+  &__field {
+    position: relative;
+    width: auto;
+  }
+
+  &__form-note {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    color: $color-light;
+
+    &-star {
+      font-size: 20px;
+      color: red;
+    }
+  }
+
+  &__btn {
+    align-self: center;
+    padding: 16px 103px;
+    margin-bottom: 60px;
+  }
+}
+
+.field {
+  padding: 10px;
+  border: 1px solid $color-border;
+  // строка ниже - это читинг, или подумаю позже или в Владу
+  width: 93%;
+
+  &__required {
+    position: absolute;
+    font-size: 20px;
+    color: red;
+    top: 20%;
+
+    &-name {
+      left: 32%;
+    }
+
+    &-email {
+      left: 19%;
+    }
+
+    &-reason {
+      left: 61%;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    cursor: pointer;
+  }
+}
+
+.textarea {
+  padding: 10px;
+  border: 1px solid $color-border;
+  margin-bottom: 8px;
+}

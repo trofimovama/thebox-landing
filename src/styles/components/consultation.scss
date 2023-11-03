@@ -1,0 +1,39 @@
+.consultation {
+  margin-bottom: 50px;
+
+  background-image: url("assets/images/room-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-container {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-descr {
+      font-size: 36px;
+      font-weight: 700;
+      color: $color-white;
+    }
+
+    &-tel {
+      font-size: 24px;
+      font-weight: 400;
+      color: $color-white;
+    }
+
+    &-link {
+      text-decoration: underline;
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.services {
+  margin-bottom: 50px;
+  background-color: $color-background-secondary;
+  padding: 40px;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+.service-card {
+  min-width: 270px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: $color-white;
+
+  &--blue {
+    background-color: $color-blue;
+  }
+
+  &__title {
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      position: absolute;
+      background: $color-light;
+    }
+
+    &--blue {
+      color: $color-blue;
+    }
+
+    &--white {
+      color: $color-white;
+    }
+  }
+}

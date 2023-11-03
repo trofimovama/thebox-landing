@@ -9,14 +9,13 @@
   </head>
   <body>
     <!-- ------------------ HEADER --------------------- -->
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <a class="logo__img" href="#">
-            <img src="./assets/images/logo.png" alt="logo icon">
-            <span class="logo__text"><i>The</i>Box</span>
-          </a>
-        </div>
+    <header class="header container">
+        <a class="logo" href="#">
+          <svg width="38" height="48">
+            <use xlink:href="#logo"/>
+          </svg>
+          <span class="logo__text"><i>The</i>Box</span>
+        </a>
         <nav class="nav">
           <a class="nav__item" href="#">Home</a>
           <a class="nav__item" href="#">About Us</a>
@@ -24,24 +23,30 @@
           <a class="nav__item" href="#">Services</a>
           <a class="nav__item" href="#">Contact Us</a>
         </nav>
-      </div>
+        <svg width="38" height="48" class="burger-menu">
+            <use xlink:href="#burger-menu"/>
+        </svg>
     </header>
     <main class="wrapper">
 <!-- ------------------ INTRO --------------------- -->
       <section class="intro">
         <div class="container">
-          <h1 class="intro__title">Building things is our mission.</h1>
+          <h1 class="intro__title">Building things <br> is our mission.</h1>
           <div class="slider-controls">
-            <span class="slider-controls__title">Feature Projects</span>
-            <span class="slider-controls__content">The National University of Architecture</span>
+            <div class="slider-controls__info">
+              <span class="slider-controls__info-title">Feature Projects</span>
+              <span class="slider-controls__info-content">The National University of Architecture</span>
+            </div>
             <div class="slider-controls__btns">
-              <button class="btn btn--prev btn--dark">Back
-                <svg class="btn__icon btn__icon--lg" fill="#fff">
+              <button class="btn btn--dark btn--navigation btn--white-text btn--lg">
+                <svg fill="#fff" height="17" width="26">
                   <use xlink:href="#arrow-back"/>
                 </svg>
+                <span>Back</span>
               </button>
-              <button class="btn btn--next btn--dark">Next
-                <svg class="btn__icon btn__icon--sm" fill="#fff">
+              <button class="btn btn--dark btn--navigation btn--white-text btn--lg">
+                <span>Next</span>
+                <svg fill="#fff" height="17" width="26">
                   <use xlink:href="#arrow-next"/>
                 </svg>
               </button>
@@ -52,11 +57,11 @@
 <!-- ------------------ REPUTATION --------------------- -->
       <section class="reputation">
         <div class="container">
-          <h2 class="reputation__title">Our Reputation</h2>
+          <h2 class="section-title">Our Reputation</h2>
           <ul class="reputation__cards">
 
             <li class="reputaion-card">
-              <svg class="reputation-card__icon" fill="#F9995D">
+              <svg fill="#F9995D" width="36" height="36">
                 <use xlink:href="#service"/>
               </svg>
               <span class="reputaion-card__title">Best Services</span>
@@ -64,7 +69,7 @@
             </li>
 
             <li class="reputaion-card">
-              <svg class="reputation-card__icon" fill="#F9995D">
+              <svg fill="#F9995D" width="36" height="36">
                 <use xlink:href="#service"/>
               </svg>
               <span class="reputaion-card__title">Best Teams</span>
@@ -72,7 +77,7 @@
             </li>
 
             <li class="reputaion-card">
-              <svg class="reputation-card__icon" fill="#F9995D">
+              <svg fill="#F9995D" width="36" height="36">
                 <use xlink:href="#instruments"/>
               </svg>
               <span class="reputaion-card__title">Best Designs</span>
@@ -85,63 +90,67 @@
 <!-- ------------------ ABOUT --------------------- -->
       <section class="about">
         <div class="container">
-          <div class="about__img">
-            <img src="./assets/images/person-photo.png" alt="photo image">
-          </div>
-          <div class="info-card">
-            <span class="info-card__title">About us</span>
-            <p class="info-card__content">For more than 30 years we have been delivering world-class construction and we&#39;ve built many lasting relationships along the way. We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
-            <button href="#" class="btn btn--lg btn--white">More on Our History</button>
+          <div class="about__elements">
+            <div class="about__img-container">
+              <img src="./assets/images/person-photo.png" alt="photo image" class="about__img">
+            </div>
+            <div class="info-card">
+              <span class="info-card__title">About us</span>
+              <p class="info-card__content">For more than 30 years we have been delivering world-class construction and we&#39;ve built many lasting relationships along the way. </p>
+              <br>
+              <p class="info-card__content">We&#39;ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+              <button href="#" class="btn btn--white btn--blue-text btn--lg">More on Our History</button>
+            </div>
           </div>
         </div>
       </section>
 <!-- ------------------ SERVICES --------------------- -->
       <section class="services">
         <div class="container">
-          <span class="services__title">Our Services</span>
+          <h2 class="section-title">Services</h2>
           <ul class="services__container">
 
             <li class="service-card">
-              <svg class="service-card__icon">
+              <svg width="40" height="40">
                 <use xlink:href="#construction"/>
               </svg>
-              <span class="service-card__title">Construction</span>
+              <span class="service-card__title service-card__title--blue">Construction</span>
             </li>
 
             <li class="service-card service-card--blue">
-              <svg class="service-card__icon">
+              <svg width="40" height="40">
                 <use xlink:href="#renovation"/>
               </svg>
-              <span class="service-card__title">Renovation</span>
+              <span class="service-card__title service-card__title--white">Renovation</span>
             </li>
 
             <li class="service-card">
-              <svg class="service-card__icon">
+              <svg width="40" height="40">
                 <use xlink:href="#consultation"/>
               </svg>
-              <span class="service-card__title">Consultation</span>
+              <span class="service-card__title service-card__title--blue">Consultation</span>
             </li>
 
             <li class="service-card service-card--blue">
-              <svg class="service-card__icon">
+              <svg width="40" height="40">
                 <use xlink:href="#repair"/>
               </svg>
-              <span class="service-card__title">Repair Services</span>
+              <span class="service-card__title service-card__title--white">Repair Services</span>
             </li>
 
             <li class="service-card">
-              <svg class="service-card__icon">
+              <svg width="40" height="40">
                 <use xlink:href="#architecture"></use>
               </svg>
-              <span class="service-card__title">Architecture</span>
+              <span class="service-card__title service-card__title--blue">Architecture</span>
             </li>
 
             <li class="service-card service-card--blue">
-              <svg class="service-card__icon">
+              <svg width="40" height="40">
                 <use xlink:href="#electric"/>
               </svg>
               <div class="service-card__separator"></div>
-              <span class="service-card__title">Electric</span>
+              <span class="service-card__title service-card__title--white">Electric</span>
             </li>
 
           </ul>
@@ -149,57 +158,57 @@
       </section>
 <!-- ------------------ EXPERIENCE --------------------- -->
       <section class="experience">
-        <div class="container">
+        <div class="container experience-container">
           <ul class="experience__cards">
 
-            <li class="experience-card experience-card--right">
-              <div class="experience-card__icon">
-                <img src="./assets/images/clients.png" alt="clients icon">
-              </div>
+            <li class="experience-card experience-card--clients">
+              <svg class="experience-card__icon experience-card__icon--right" width="80" height="80">
+                <use xlink:href="#clients"/>
+              </svg>
               <span class="experience-card__digit">84</span>
               <span class="experience-card__description">Happy Clients</span>
             </li>
 
-            <li class="experience-card experience-card--left">
-              <div class="experience-card__icon">
-                <img src="./assets/images/projects.png" alt="projects icon">
-              </div>
+            <li class="experience-card experience-card--projects">
+              <svg class="experience-card__icon experience-card__icon--left" width="80" height="80">
+                <use xlink:href="#projects"/>
+              </svg>
               <span class="experience-card__digit">123</span>
               <span class="experience-card__description">Projects Completed</span>
             </li>
 
-            <li class="experience-card experience-card--right">
-              <div class="experience-card__icon">
-                <img src="./assets/images/awards.png" alt="awards icon">
-              </div>
+            <li class="experience-card experience-card--awards">
+              <svg class="experience-card__icon experience-card__icon--right" width="80" height="80">
+                <use xlink:href="#awards"/>
+              </svg>
               <span class="experience-card__digit">37</span>
               <span class="experience-card__description">Awards Win</span>
             </li>
 
-            <li class="experience-card experience-card--right experience-card--bottom">
-              <div class="experience-card__icon">
-                <img src="./assets/images/business.png" alt="business icon">
-              </div>
+            <li class="experience-card experience-card--business">
+              <svg class="experience-card__icon experience-card__icon--bottom" width="80" height="80">
+                <use xlink:href="#business"/>
+              </svg>
               <span class="experience-card__digit">30</span>
               <span class="experience-card__description">Years in Business</span>
             </li>
 
-          </div>
+          </ul>
           <div class="experience__description">
             <span class="experience__description-title">30 Years Experience</span>
             <p class="experience__description-content">Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
-            <button href="#" class="btn btn--blue btn--sm">Contact Us</button>
+            <button href="#" class="btn btn--blue btn--white-text btn--lg">Contact Us</button>
           </div>
         </div>
       </section>
 <!-- ------------------ CONSULTATION --------------------- -->
       <section class="consultation">
-        <div class="container">
+        <div class="container consultation-container">
           <div class="consultation__info">
             <span class="consultation__info-descr">Free consultation with exceptional quality</span>
-            <span class="consultation__info-tel">Just one call away: <a href="tel:+84 1102 2703">+84 1102 2703</a></span>
+            <span class="consultation__info-tel">Just one call away: <a href="tel:+84 1102 2703" class="consultation__info-link">+84 1102 2703</a></span>
           </div>
-          <button href="#" class="btn btn--outline">Get your consultation</button>
+          <button href="#" class="btn btn--white-text btn--outline btn--lg">Get your consultation</button>
         </div>
       </section>
 <!-- ------------------ PROJECTS --------------------- -->
@@ -218,53 +227,55 @@
 
                 <li class="project-card">
                   <img src="./assets/images/wildstone-infra.png" alt="Wildstone Infra Hotel picture" class="projects-card__img">
-                  <div class="projects-card__descr">
-                    <span class="projects-card__descr-title">Wildstone Infra Hotel</span>
-                    <span class="projects-card__descr-address">2715 Ash Dr. San Jose, South Dakota</span>
+                  <div class="project-card__descr">
+                    <span class="project-card__descr-title">Wildstone Infra Hotel</span>
+                    <span class="project-card__descr-address">2715 Ash Dr. San Jose, South Dakota</span>
                   </div>
                 </li>
 
                 <li class="project-card">
                   <img src="./assets/images/wish-stone.png" alt="Wish Stone Building picture" class="projects-card__img">
-                  <div class="projects-card__descr">
-                    <span class="projects-card__descr-title">Wish Stone Building</span>
-                    <span class="projects-card__descr-address">2972 Westheimer Rd. Santa Ana, Illinois</span>
+                  <div class="project-card__descr">
+                    <span class="project-card__descr-title">Wish Stone Building</span>
+                    <span class="project-card__descr-address">2972 Westheimer Rd. Santa Ana, Illinois</span>
                   </div>
                 </li>
 
                 <li class="project-card">
                   <img src="./assets/images/parkinston.png" alt="Mr. Parkinston's House picture" class="projects-card__img">
-                  <div class="projects-card__descr">
-                    <span class="projects-card__descr-title">Mr. Parkinston&#39;s House</span>
-                    <span class="projects-card__descr-address">3517 W. Gray St. Utica, Pennsylvania</span>
+                  <div class="project-card__descr">
+                    <span class="project-card__descr-title">Mr. Parkinston&#39;s House</span>
+                    <span class="project-card__descr-address">3517 W. Gray St. Utica, Pennsylvania</span>
                   </div>
                 </li>
 
                 <li class="project-card">
                   <img src="./assets/images/oregano-height.png" alt="Oregano Height picture" class="projects-card__img">
-                  <div class="projects-card__descr">
-                    <span class="projects-card__descr-title">Oregano Height</span>
-                    <span class="projects-card__descr-address">2464 Royal Ln. Mesa, New Jersey</span>
+                  <div class="project-card__descr">
+                    <span class="project-card__descr-title">Oregano Height</span>
+                    <span class="project-card__descr-address">2464 Royal Ln. Mesa, New Jersey</span>
                   </div>
                 </li>
 
               </ul>
               <div class="tabs__navigation">
-                <button class="btn btn--lg btn--next btn--dark">Next
-                  <svg class="btn__icon btn__icon--lg" fill="#fff">
-                    <use xlink:href="#arrow-next"/>
+                <button class="btn btn--dark btn--navigation btn--white-text btn--lg">
+                  <svg fill="#fff" height="17" width="26">
+                    <use xlink:href="#arrow-back"/>
                   </svg>
+                  <span>Back</span>
                 </button>
                 <div class="dots">
                   <div class="dots__item"></div>
-                  <div class="dots__item dotes__item--active"></div>
+                  <div class="dots__item dots__item--active"></div>
                   <div class="dots__item"></div>
                   <div class="dots__item"></div>
                   <div class="dots__item"></div>
                 </div>
-                <button class="btn btn-lg btn-prev btn--dark">Back
-                  <svg class="btn__icon btn__icon--lg" fill="#fff">
-                    <use xlink:href="#arrow-back"/>
+                <button class="btn btn--dark btn--navigation btn--white-text btn--lg">
+                  <span>Next</span>
+                  <svg fill="#fff" height="17" width="26">
+                    <use xlink:href="#arrow-next"/>
                   </svg>
                 </button>
               </div>
@@ -274,59 +285,75 @@
       </section>
 <!-- ------------------ FEEDBACK --------------------- -->
       <section class="feedback">
-        <div class="container">
-          <h2 class="feedback__title">What can us do for you?</h2>
-          <p class="feedback__description">We are ready to work on a project of any complexity, whether it&#39;s commercial or residential.</p>
+        <div class="container feedback-container">
+          <h2 class="section-title">What can us do for you?</h2>
+          <p class="feedback__description">We are ready to work on a project of any complexity, <br> whether it&#39;s commercial or residential.</p>
           <form action="#" method="post" class="feedback__form">
             <div class="feedback__form-fields">
-              <input type="text" placeholder="Your name" class="field" required />
-              <input type="email" placeholder="Email" class="field" required />
-              <input type="text" placeholder="Reason for Contacting" class="field" required />
-              <input type="tel" placeholder="Phone" class="field" />
+              <div class="feedback__field">
+                <input type="text" placeholder="Your name" class="field" required />
+                <span class="field__required field__required-name">*</span>
+              </div>
+              <div class="feedback__field">
+                <input type="email" placeholder="Email" class="field" required />
+                <span class="field__required field__required-email">*</span>
+              </div>
+              <div class="feedback__field">
+                <input type="text" placeholder="Reason for Contacting" class="field" required />
+                <span class="field__required field__required-reason">*</span>
+                <svg fill="#2947A9" height="20" width="20" class="field__icon">
+                  <use xlink:href="#drop-down"/>
+                </svg>
+              </div>
+              <div class="feedback__field">
+                <input type="tel" placeholder="Phone" class="field" />
+              </div>
             </div>
-            <textarea cols="30" rows="10" placeholder="Message" class="textarea"></textarea>
-            <span class="feedback__form-note">* indicates a required field</span>
-            <button type="submit" class="btn btn--blue btn--sm" href="#">Submit</button>
+            <textarea rows="10" placeholder="Message" class="textarea"></textarea>
+            <span class="feedback__form-note"> <span class="feedback__form-note-star">*</span> indicates a required field</span>
+            <button type="submit" class="btn btn--blue btn--white-text feedback__btn" href="#">Submit</button>
           </form>
         </div>
       </section>
 <!-- ------------------ CONTACTS --------------------- -->
       <section class="contacts">
-        <div class="container">
+        <div class="container contacts-container">
           <div class="contacts__info">
-            <span class="contacts__info-item"><span class="contacts__info-name">ADDRESS:</span>6391 Elgin St. Celina, Delaware 10299</span>
-            <span class="contacts__info-item"><span class="contacts__info-name">PHONE:</span>6391 Elgin St. Celina, Delaware 10299</span>
-            <span class="contacts__info-item"><span class="contacts__info-name">EMAIL:</span><a href="mailto:hello@thebox.com">hello@thebox.com</a></span>
-            <div class="logo">
-              <a class="logo__img" href="#">
-                <img src="./assets/images/logo.png" alt="logo icon">
-                <span class="logo__name"><i>The</i>Box</span>
-              </a>
-            </div>
+            <span class="contacts__info-item"><span class="info-name">ADDRESS:</span>6391 Elgin St. Celina, Delaware 10299</span>
+            <span class="contacts__info-item"><span class="info-name">PHONE:</span>6391 Elgin St. Celina, Delaware 10299</span>
+            <span class="contacts__info-item"><span class="info-name">EMAIL:</span><a href="mailto:hello@thebox.com">hello@thebox.com</a></span>
+            <a class="logo" href="#">
+              <svg width="38" height="48">
+                <use xlink:href="#logo"/>
+              </svg>
+              <span class="logo__text"><i>The</i>Box</span>
+            </a>
           </div>
           <div class="contacts__feedback">
 
             <div class="contacts__feedback-email">
-              <span class="contacts__feedback-title">NEWSLETTER:</span>
-              <input type="email" class="field">
-              <button type="submit" class="btn btn-sm btn-orange">Subscribe</button>
+              <span class="contacts__feedback-title info-name">NEWSLETTER:</span>
+              <div class="input-group">
+                <input type="email" class="field">
+                <button type="submit" class="btn btn--orange btn--white-text btn--sm">Subscribe</button>
+              </div>
             </div>
 
             <div class="contacts__feedback-social">
-              <span class="contacts__feedback-title">SOCIAL:</span>
+              <span class="contacts__feedback-title info-name">SOCIAL:</span>
               <div class="social-icons">
                 <a href="#" class="social-icons__item">
-                  <svg fill="#3D445C">
+                  <svg width="40" height="40">
                     <use xlink:href="#facebook-logo"/>
                   </svg>
                 </a>
                 <a href="#" class="social-icons__item">
-                  <svg fill="#3D445C">
+                  <svg width="40" height="40">
                     <use xlink:href="#linkedin-logo"/>
                   </svg>
                 </a>
                 <a href="#" class="social-icons__item">
-                  <svg fill="#3D445C">
+                  <svg width="40" height="40">
                     <use xlink:href="#twitter-logo"/>
                   </svg>
                 </a>
