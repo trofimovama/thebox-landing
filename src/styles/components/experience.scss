@@ -6,9 +6,10 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 1170px) {
+    @media screen and (max-width: 700px) {
       & {
-        flex-direction: column;
+       flex-direction: column;
+       gap: 20px;
       }
     }
   }
@@ -17,16 +18,9 @@
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 930px) {
+    @media screen and (max-width: 835px) {
       & {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 730px) {
-      & {
-        gap: 30px;
-        margin-bottom: 30px;
+       gap: 15px;
       }
     }
   }
@@ -40,17 +34,24 @@
     gap: 40px;
     width: 40%;
 
-    @media (max-width: 730px) {
-      & {
-        width: 100%;
-      }
-    }
-
     &-title {
       font-size: 60px;
       font-weight: 700;
       line-height: 70px;
       color: $color-blue;
+
+      @media screen and (max-width: 1035px) {
+        & {
+          font-size: 40px;
+          line-height: 40px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        & {
+         font-size: 30px;
+        }
+      }
     }
 
     &-content {
@@ -58,106 +59,37 @@
       font-weight: 400;
       line-height: 23px;
       color: $color-light;
-    }
-  }
-}
 
-.experience-card {
-  position: relative;
-
-  min-height: 155px;
-
-  display: flex;
-  flex-direction: column;
-
-  padding: 20px;
-  background-color: $color-white;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-  &__icon {
-    position: absolute;
-
-    &--right {
-      right: -40px;
-      top: -40px;
+      @media screen and (max-width: 920px) {
+        & {
+          font-size: 16px;
+        }
+      }
     }
 
-    &--left {
-      left: -40px;
-      top: -40px;
-    }
-
-    &--bottom {
-      right: -40px;
-      bottom: -40px;
-    }
-  }
-
-  &__digit {
-    font-size: 79px;
-    font-weight: 600;
-    color: $color-dark;
-  }
-
-  &__description {
-    position: relative;
-    align-self: center;
-    font-size: 24px;
-    font-weight: 400;
-    color: $color-light;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: -12px;
-      width: 7px;
-      height: 25px;
-      background-color: $color-orange;
-    }
-  }
-  &--clients {
-    width: 280px;
-    transform: translate(100%);
-    z-index: 1;
-
-    @media (max-width: 730px) {
+    @media screen and (max-width: 1035px) {
       & {
-        transform: translate(0);
+        width: 30%;
+      }
+    }
+
+    @media screen and (max-width: 835px) {
+      & {
+       width: 40%;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      & {
+       width: 100%;
+       gap: 15px;
       }
     }
   }
 
-  &--projects {
-    width: 360px;
-    transform: translateY(-20%);
-
-    @media (max-width: 730px) {
-      & {
-        transform: translate(0);
-      }
-    }
-  }
-
-  &--awards {
-    width: 270px;
-    transform: translate(70%, -30%);
-    z-index: 1;
-
-    @media (max-width: 730px) {
-      & {
-        transform: translate(0);
-      }
-    }
-  }
-
-  &--business {
-    width: 330px;
-    transform: translate(20%, -40%);
-
-    @media (max-width: 730px) {
-      & {
-        transform: translate(0);
-      }
+  @media screen and (max-width: 850px) {
+    & {
+      margin-bottom: 15px
     }
   }
 }

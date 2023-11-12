@@ -1,0 +1,49 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 384px;
+  min-height: 331px;
+
+  @media screen and (max-width: 1150px) {
+    & {
+      min-width: auto;
+      min-height: auto;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    color: $color-white;
+    background-color: $color-blue;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+
+      @media screen and (max-width: 935px) {
+        & {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-address {
+      font-size: 18px;
+      font-weight: 400;
+
+      @media screen and (max-width: 935px) {
+        & {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

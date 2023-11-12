@@ -1,0 +1,167 @@
+.experience-card {
+  position: relative;
+
+  min-height: 155px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  background-color: $color-white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  &__icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+    &--right {
+      right: -40px;
+      top: -40px;
+
+      @media screen and (max-width: 835px) {
+        & {
+          right: 5%;
+          top: 5%;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+    &--left {
+      left: -40px;
+      top: -40px;
+
+      @media screen and (max-width: 835px) {
+        & {
+          left: 80%;
+          top: 5%;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+    &--bottom {
+      right: -40px;
+      bottom: -40px;
+
+      @media screen and (max-width: 835px) {
+        & {
+          right: 5%;
+          top: 5%;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  &__digit {
+    font-size: 79px;
+    font-weight: 600;
+    color: $color-dark;
+
+    @media screen and (max-width: 1035px) {
+      & {
+        font-size: 50px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      & {
+       font-size: 40px;
+      }
+    }
+  }
+
+  &__description {
+    position: relative;
+    align-self: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-light;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -12px;
+      width: 7px;
+      height: 25px;
+      background-color: $color-orange;
+    }
+
+    @media screen and (max-width: 920px) {
+      & {
+        font-size: 18px;
+      }
+    }
+  }
+  &--clients {
+    width: 280px;
+    transform: translate(100%);
+    z-index: 1;
+
+    @media screen and (max-width: 1180px) {
+      & {
+        transform: translate(50%);
+      }
+    }
+
+    @media screen and (max-width: 835px) {
+      & {
+        transform: translate(0);
+      }
+    }
+  }
+
+  &--projects {
+    width: 360px;
+    transform: translateY(-20%);
+
+    @media screen and (max-width: 835px) {
+      & {
+        width: 280px;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &--awards {
+    width: 270px;
+    transform: translate(70%, -30%);
+    z-index: 1;
+
+    @media screen and (max-width: 1180px) {
+      & {
+        transform: translate(40%, -30%);
+      }
+    }
+
+    @media screen and (max-width: 835px) {
+      & {
+        width: 280px;
+        transform: translate(0);
+      }
+    }
+  }
+
+  &--business {
+    width: 330px;
+    transform: translate(20%, -40%);
+
+    @media screen and (max-width: 835px) {
+      & {
+        width: 280px;
+        transform: translate(0);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1035px) {
+    & {
+      min-height: 100px;
+    }
+  }
+}

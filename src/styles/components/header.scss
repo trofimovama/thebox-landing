@@ -1,52 +1,22 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 0;
-}
+.page-header {
+  width: 100%;
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
 
-  &__text {
-    color: $color-blue;
-    font-weight: 700;
-    font-size: 30px;
-  }
-}
-
-.burger-menu {
-  display: none;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-
-  &__item {
-    font-size: 18px;
-    color: $color-medium;
-
-    &:hover {
-      color: $color-orange;
+    @media screen and (max-width: 410px) {
+      & {
+        padding: 10px 0;
+      }
     }
   }
 
-  @media (max-width: 880px) {
+  @media screen and (max-width: 850px) {
     & {
-      gap: 25px;
+      margin-bottom: 15px
     }
-  }
-}
-
-@media (max-width: 775px) {
-  .burger-menu {
-    display: block;
-  }
-
-  .nav {
-    display: none;
   }
 }

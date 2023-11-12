@@ -1,5 +1,5 @@
 .projects {
-  margin: 50px;
+  margin-bottom: 50px;
 
   &__title {
     margin-bottom: 50px;
@@ -7,152 +7,10 @@
     font-weight: 700;
     color: $color-dark;
   }
-}
 
-.tabs {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  width: 100%;
-
-  @media (max-width: 900px) {
+  @media screen and (max-width: 850px) {
     & {
-      flex-direction: column;
-    }
-  }
-
-  &__controls {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 40%;
-    gap: 20px;
-
-    @media (max-width: 900px) {
-      & {
-        flex-direction: row;
-      }
-    }
-
-    &-item {
-      font-size: 24px;
-      font-weight: 500;
-      color: $color-light;
-
-      @media (max-width: 610px) {
-        & {
-          font-size: 18px;
-        }
-      }
-
-      &:hover {
-        position: relative;
-        color: $color-blue;
-        @media (max-width: 900px) {
-          & {
-            text-decoration: underline;
-            font-weight: 700;
-          }
-        }
-      }
-
-      &:hover:before {
-        content: "";
-        position: absolute;
-        height: 28px;
-        width: 4px;
-        left: -12px;
-        background-color: $color-blue;
-
-        @media (max-width: 900px) {
-          & {
-            background-color: transparent;
-          }
-        }
-      }
-    }
-  }
-
-  &__body {
-    flex-basis: auto;
-    align-items: stretch;
-
-    &-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      margin-bottom: 32px;
-
-      @media (max-width: 740px) {
-        & {
-          grid-template-columns: 1fr;
-        }
-      }
-    }
-  }
-
-  &__navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 33px;
-  }
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  min-width: 384px;
-  min-height: 331px;
-
-  @media (max-width: 1150px) {
-    & {
-      min-width: auto;
-      min-height: auto;
-    }
-  }
-
-  &__img {
-    object-fit: cover;
-  }
-
-  &__descr {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px;
-    color: $color-white;
-    background-color: $color-blue;
-
-    &-title {
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    &-address {
-      font-size: 18px;
-      font-weight: 400;
-    }
-  }
-}
-
-.dots {
-  display: flex;
-  gap: 16px;
-
-  &__item {
-    height: 16px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: $color-light;
-
-    &:hover {
-      background-color: $color-blue;
-      cursor: pointer;
-    }
-
-    &:active {
-      background-color: $color-blue;
+      margin-bottom: 15px
     }
   }
 }
