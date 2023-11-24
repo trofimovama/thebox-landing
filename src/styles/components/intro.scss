@@ -1,0 +1,41 @@
+.intro {
+  background-image: url("assets/images/intro.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  margin-bottom: 50px;
+  height: 600px;
+
+
+  &__title {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 84.46px;
+    color: $color-dark;
+    padding-top: 190px;
+
+    @media screen and (max-width: 850px) {
+      & {
+        font-size: 45px;
+        line-height: 60px;
+        padding-top: 100px;
+      }
+    }
+
+    @media screen and (max-width: 590px) {
+      & {
+       padding-top: 40px;
+       font-size: 35px;
+       line-height: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    & {
+      margin-bottom: 15px
+    }
+  }
+}

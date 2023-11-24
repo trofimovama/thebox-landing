@@ -1,0 +1,16 @@
+.projects {
+  margin-bottom: 50px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $color-dark;
+  }
+
+  @media screen and (max-width: 850px) {
+    & {
+      margin-bottom: 15px
+    }
+  }
+}

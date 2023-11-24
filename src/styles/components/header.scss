@@ -1,0 +1,22 @@
+.page-header {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+
+    @media screen and (max-width: 410px) {
+      & {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    & {
+      margin-bottom: 15px
+    }
+  }
+}

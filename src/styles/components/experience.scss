@@ -1,0 +1,95 @@
+.experience {
+  margin-bottom: 50px;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 700px) {
+      & {
+       flex-direction: column;
+       gap: 20px;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 835px) {
+      & {
+       gap: 15px;
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    gap: 40px;
+    width: 40%;
+
+    &-title {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 70px;
+      color: $color-blue;
+
+      @media screen and (max-width: 1035px) {
+        & {
+          font-size: 40px;
+          line-height: 40px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        & {
+         font-size: 30px;
+        }
+      }
+    }
+
+    &-content {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23px;
+      color: $color-light;
+
+      @media screen and (max-width: 920px) {
+        & {
+          font-size: 16px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1035px) {
+      & {
+        width: 30%;
+      }
+    }
+
+    @media screen and (max-width: 835px) {
+      & {
+       width: 40%;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      & {
+       width: 100%;
+       gap: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    & {
+      margin-bottom: 15px
+    }
+  }
+}

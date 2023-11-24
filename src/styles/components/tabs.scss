@@ -1,0 +1,100 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+
+  @media screen and (max-width: 900px) {
+    & {
+      flex-direction: column;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    gap: 20px;
+
+    @media screen and (max-width: 900px) {
+      & {
+        flex-direction: row;
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      & {
+        gap: 10px;
+      }
+    }
+
+    &-item {
+      font-size: 24px;
+      font-weight: 500;
+      color: $color-light;
+
+      @media screen and (max-width: 935px) {
+        & {
+          font-size: 18px;
+        }
+      }
+
+      &:hover {
+        position: relative;
+        color: $color-blue;
+        @media screen and (max-width: 900px) {
+          & {
+            text-decoration: underline;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &:hover:before {
+        content: "";
+        position: absolute;
+        height: 28px;
+        width: 4px;
+        left: -12px;
+        background-color: $color-blue;
+
+        @media screen and (max-width: 900px) {
+          & {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  &__body {
+    flex-basis: auto;
+    align-items: stretch;
+
+    &-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+
+      @media screen and (max-width: 740px) {
+        & {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 33px;
+
+    @media screen and (max-width: 645px) {
+      & {
+        gap: 15px;
+      }
+    }
+  }
+}

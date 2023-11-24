@@ -1,0 +1,19 @@
+.field {
+  padding: 10px;
+  border: 1px solid $color-border;
+  width: 100%;
+
+  &__required {
+    position: absolute;
+    font-size: 20px;
+    color: red;
+    top: 20%;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    cursor: pointer;
+  }
+}

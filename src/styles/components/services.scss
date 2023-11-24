@@ -1,0 +1,25 @@
+.services {
+  margin-bottom: 50px;
+  background-color: $color-background-secondary;
+  padding: 40px;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    @media screen and (max-width: 1205px) {
+      & {
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    & {
+      margin-bottom: 15px
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.reputaion-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1 1 0px;
+  padding: 20px 20px 40px 20px;
+  min-width: 150px;
+  border: 1px solid $color-border;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-medium-dark;
+
+    @media screen and (max-width: 840px) {
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-light;
+
+    @media screen and (max-width: 840px) {
+      font-size: 14px;
+    }
+  }
+}

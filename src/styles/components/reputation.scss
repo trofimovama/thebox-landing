@@ -1,0 +1,21 @@
+.reputation {
+  margin-bottom: 50px;
+
+  &__cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    @media screen and (max-width: 900px) {
+      gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    & {
+      margin-bottom: 15px
+    }
+  }
+}
